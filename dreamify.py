@@ -7,7 +7,9 @@ from IPython.display import clear_output, Image, display
 from google.protobuf import text_format
 
 import caffe
-
+# uncomment for GPU.
+# caffe.set_mode_gpu()
+# caffe.set_device(0) # select GPU 
 import sys
 
 def savearray(a, filename, fmt='png'):
